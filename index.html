@@ -7,12 +7,56 @@
       type="module"
       src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Miriam+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        font-family: inherit;
+      }
+
+      h1,
+      h2 {
+        font-family: "BioRhyme", serif;
+      }
+      body {
+        font-family: "Miriam Libre", sans-serif;
+      }
+
+      html {
+        background-color: #efece7;
+      }
+      :root {
+        --esp-tools-button-color: green;
+      }
+    </style>
   </head>
   <body>
     <h1>The Biggest Boot</h1>
 
     <p>Firmware Updater For The Biggest Foot</p>
-    <p>Latest Version: 4.1.0 (August 7, 2024)</p>
+
+    <ol>
+      <li>Plug The Biggest Foot in to Eurorack power via ribbon cable</li>
+      <li>
+        Plug a USB-C cable in to The Biggest Boot sub-board, and a desktop
+        computer running Chrome.
+      </li>
+      <li>Click the Connect button.</li>
+      <li>
+        Select the "USB to UART Bridge Controller".
+        <em
+          >If you don't see this option listed, try a different USB-C cable.</em
+        >
+      </li>
+      <li>Choose to erase & flash.</li>
+    </ol>
+
+    <h2>Latest Version: 4.1.0 (August 7, 2024)</h2>
 
     <esp-web-install-button
       manifest="https://swampflux.github.io/the-biggest-boot/manifest.json"
