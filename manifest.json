@@ -2,11 +2,11 @@
   "name": "The Biggest Foot",
   "version": "4.1.0",
   "funding_url": "https://patreon.com/swampflux",
-  "new_install_prompt_erase": true,
+  "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32",
-      "parts": [{ "path": "firmware/the-biggest-foot-4.1.0.bin", "offset": 0 }]
+      "parts": [{ "path": "firmware/the-biggest-foot-4.1.1.bin", "offset": 0 }]
     }
   ]
 }
