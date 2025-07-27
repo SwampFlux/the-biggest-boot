@@ -5,11 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="og:image" content="boards.jpg" />
     <meta
-      name="description"
-      content="Firmware updater for The Biggest Foot Eurorack module."
+      property="og:image"
+      content="https://swampflux.github.io/og-image.jpg"
     />
+    <meta property="og:title" content="The Biggest Boot Loader" />
+    <meta name="description" content="Firmware updater for The Biggest Foot." />
 
     <script
       type="module"
@@ -46,20 +47,36 @@
         margin: 0;
       }
 
+      main {
+        padding: 1rem;
+      }
+
       header {
+        display: flex;
+        flex-direction: row;
         height: 10rem;
-        background-image: url("boards.jpg");
+        background-color: white;
+      }
+
+      header img {
+        height: 100%;
+        width: auto;
+      }
+
+      .header-bg {
+        flex: 1;
+        background-image: url("header.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
-      main {
-        padding: 1rem;
-      }
     </style>
   </head>
   <body>
-    <header>&nbsp;</header>
+    <header>
+      <img src="logo-optimized.svg" alt="Swamp Flux" />
+      <div class="header-bg"></div>
+    </header>
     <main>
       <h1>The Biggest Boot Loader</h1>
 
