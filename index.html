@@ -36,7 +36,7 @@
     </style>
   </head>
   <body>
-    <h1>The Biggest Boot</h1>
+    <h1>The Biggest Boot Loader</h1>
 
     <p>Firmware Updater For The Biggest Foot</p>
 
@@ -56,7 +56,51 @@
       <li>Choose to erase & flash.</li>
     </ol>
 
-    <h2>Latest Version: 4.1.1 (August 9, 2024)</h2>
+    <h2>5.0.0 (July 26, 2025)</h2>
+    <p>
+      This update focused mainly on bug fixes that affected production units.
+    </p>
+    <esp-web-install-button
+      manifest="firmware/biggestfoot-5.0.0-manifest.json"
+    ></esp-web-install-button>
+    <ul>
+      <li>
+        Changed:
+        <strong
+          >Hold down SHIFT while powering on to connect your balance board for
+          the first time.</strong
+        >
+      </li>
+      <li>
+        Changed:
+        <strong>
+          Press the front button to connect your balance board after pairing at
+          least once.
+        </strong>
+      </li>
+      <li>Fixed: Balance board will automatically reconnect if interrupted.</li>
+      <li>Added: Version number of firmware displays on boot.</li>
+      <li>Fixed: One-shot playback jumped to ranom position at the end.</li>
+      <li>Pressing Record after pressing Trigger would not record.</li>
+      <li>
+        Fixed: Calibration could be completed on low battery causing a crash.
+      </li>
+      <li>
+        Fixed: Calibration would change user weight even if not completed.
+      </li>
+      <li>Changed: Lefty orbits around the center at boot.</li>
+      <li>
+        Changed: Pressing trig randomizes the orbit center just like CV
+        triggers.
+      </li>
+      <li>Known Issue: There is now no way to bring Lefty back to center.</li>
+    </ul>
+
+    <h2>4.1.1 (August 9, 2024)</h2>
+    <p>The first production release</p>
+    <esp-web-install-button
+      manifest="firmware/the-biggest-foot-4.1.1.json"
+    ></esp-web-install-button>
     <ul>
       <li>Fixed: Crash when no triggers are sent over plugged in CV input</li>
       <li>
@@ -66,8 +110,5 @@
         Known issue: Manual reset no longer works while external clock is paused
       </li>
     </ul>
-    <esp-web-install-button
-      manifest="https://swampflux.github.io/the-biggest-boot/manifest.json"
-    ></esp-web-install-button>
   </body>
 </html>

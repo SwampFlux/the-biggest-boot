@@ -1,0 +1,25 @@
+{
+  "name": "The Biggest Foot",
+  "version": "5.0.0",
+  "funding_url": "https://patreon.com/swampflux",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "biggestfoot-5.0.0-bootloader.bin",
+          "offset": 4096
+        },
+        {
+          "path": "biggestfoot-5.0.0-partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "biggestfoot-5.0.0-firmware.bin",
+          "offset": 65536
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   "builds": [
     {
       "chipFamily": "ESP32",
-      "parts": [{ "path": "firmware/the-biggest-foot-4.1.1.bin", "offset": 0 }]
+      "parts": [{ "path": "the-biggest-foot-4.1.1.bin", "offset": 0 }]
     }
   ]
 }
