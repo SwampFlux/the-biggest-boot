@@ -3,6 +3,14 @@
   <head>
     <title>The Biggest Boot Loader</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:image" content="boards.jpg" />
+    <meta
+      name="description"
+      content="Firmware updater for The Biggest Foot Eurorack module."
+    />
+
     <script
       type="module"
       src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
@@ -33,9 +41,23 @@
       :root {
         --esp-tools-button-color: green;
       }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        height: 10rem;
+        background-image: url("boards.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     </style>
   </head>
   <body>
+    <header>&nbsp;</header>
+
     <h1>The Biggest Boot Loader</h1>
 
     <p>Firmware Updater For The Biggest Foot</p>
