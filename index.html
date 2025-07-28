@@ -107,37 +107,18 @@
         manifest="firmware/biggestfoot-5.0.0-manifest.json"
       ></esp-web-install-button>
       <ul>
-        <li>
-          Changed:
-          <strong
-            >Hold down SHIFT while powering on to connect your balance board for
-            the first time.</strong
-          >
-        </li>
-        <li>
-          Changed:
-          <strong>
-            Press the front button to connect your balance board after pairing
-            at least once.
-          </strong>
-        </li>
-        <li>
-          Fixed: Balance board will automatically reconnect if interrupted.
-        </li>
-        <li>Added: Version number of firmware displays on boot.</li>
-        <li>Fixed: One-shot playback jumped to ranom position at the end.</li>
-        <li>Pressing Record after pressing Trigger would not record.</li>
-        <li>
-          Fixed: Calibration could be completed on low battery causing a crash.
-        </li>
-        <li>
-          Fixed: Calibration would change user weight even if not completed.
-        </li>
+        <li><strong>Changed: Hold down SHIFT while powering on to pair your balance board to The Biggest Foot.</strong></li>
+        <li><strong>Changed: Press the front button to connect your balance board after pairing at least once.</strong></li>
+        <li>Fixed: Balance board will automatically reconnect if interrupted.</li>
+        <li>Fixed: Balance board will be rejected from connection if it is not sending weight information. Press front button to try again without the need to reboot the module.</li>
+        <li>Fixed: The Boot button will reset the module and be able to connect again using the auto reconnect and auto rejection fixes.</li>
+        <li>Added: Version number of firmware displays on boot. (Requested by Aard!)</li>
+        <li>Fixed: One-shot playback jumped to random position at the end.</li>
+        <li>Fixed: Pressing Record after pressing Trigger would not record.</li>
+        <li>Fixed: Calibration could be completed on low battery causing a crash.</li>
+        <li>Fixed: Calibration would change user weight even if not completed.</li>
         <li>Changed: Lefty orbits around the center at boot.</li>
-        <li>
-          Changed: Pressing trig randomizes the orbit center just like CV
-          triggers.
-        </li>
+        <li>Changed: Pressing trig randomizes the orbit center just like CV triggers.</li>
         <li>Known Issue: There is now no way to bring Lefty back to center.</li>
       </ul>
 
